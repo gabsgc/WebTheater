@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>WebTheater - Detona Ralph</title> {% endblock %}
+{% block styles %} {% endblock %}
+    
+{% block content %}
+    <div class="container p-3">
+        <h1 class="text-light text-center">Detona Ralph - WifiRalph</h1>
+        <div class="row mb-4 mt-4">
+            <video width="520" height="440" controls="controls">
+                <source src="../static/video/detona-ralph.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="col-lg-2 col-sm-4 pl-lg-5 mb-4">
+            <button type="button" class="btn btn-primary btn-sm m-3">Curtir</button>
+            <i class="far fa-eye"></i>
+            <button type="button" class="btn btn-outline-info btn-sm">912 Views</button>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="row">
+                <h2>Deixe seu comentário:</h2>
+                <div class="mb-3">
+                    <label for="nome" class="form-label text-light">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                </div>
+                <div class="mb-3">
+                    <label for="comentário" class="form-label text-light">Comentário</label>
+                    <textarea class="form-control" id="comentário" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary m-3">Enviar Comentário</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}{% endblock %}
