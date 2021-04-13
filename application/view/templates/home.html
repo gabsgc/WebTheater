@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>WebTheater - A diversão para sua vida!</title> {% endblock %}
+{% block styles %} {% endblock %}
+
+{% block content %}
+    <div class="container home">
+        <div class="row inicio text-light text-center mb-4">
+            <h1>Seja bem-vindo ao WebTheater!</h1>
+            <p>Escolha o vídeo da categoria desejada e aproveite! =)</p>
+        </div>
+        <!--Categorias-->
+        <h2 class="text-center">Categorias</h2>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-sm-4 pl-lg-5 mb-4">
+                <img src="../static/image/categoria_filme.png" width="250px" class="img-fluid" alt="Filme">
+                <h3 class="text-light">Filmes</h3>
+                <p>
+                    O melhor do cinema para você!
+                </p>
+                <!--Videos mais curtidos-->
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_ralph.png" width="250px" class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">Detona Ralph</h5>
+                          <p class="card-text">Embarque nessa aventura <br>emocionante!</p>
+                          <a href="/video/1" class="btn btn-primary">Assistir</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_desafiandogigantes.png" width="250px" class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">Desafiando Gigantes</h5>
+                          <p class="card-text">
+                            Cultivando Valores - União <br> Comprometer-se com o único <br>propósito, reconhecendo que <br>precisamos uns dos outros para <br>entregar tudo com excelência.
+                          </p>
+                          <button type="button" class="btn btn-outline-warning">Disponível em breve</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_zootopia.png" width="250px" class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">Zootopia</h5>
+                          <p class="card-text">
+                            Zootopia é uma cidade diferente <br> de tudo o que você já viu.<br> Formada por “bairros-habitat”, como <br> a elegante 
+                            Praça Sahara e a gelada Tundralândia, essa metrópole abriga <br> uma grande diversidade de animais irreverentes 
+                            sempre prontos para <br>encarar uma nova e divertida aventura.
+                          </p>
+                          <button type="button" class="btn btn-outline-warning">Disponível em breve</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 pl-lg-5 mb-4">
+                <img src="../static/image/categoria_musica.png" width="250px" class="img-fluid" alt="Música">
+                <h3 class="text-light">Música</h3>
+                <p>
+                    Para dar motivação e alegria!
+                </p>
+                <!--Videos mais curtidos-->
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_rioazul.png" width="250px" class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">Além do Rio Azul</h5>
+                          <p class="card-text">Cover by Júlia Vitória</p>
+                          <a href="/video/2" class="btn btn-primary">Assistir</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_yousay.png" width="250px"  class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">You Say</h5>
+                          <p class="card-text">By Lauren Daigle</p>
+                          <button type="button" class="btn btn-outline-warning">Disponível em breve</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_enough.png" width="250px"  class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">Enough</h5>
+                          <p class="card-text">By Koryn Hawthorne</p>
+                          <button type="button" class="btn btn-outline-warning">Disponível em breve</button>
+                        </div>
+                      </div>
+                </div>
+             
+            </div>
+
+            <div class="col-lg-4 col-sm-4 pl-lg-5 mb-4">
+                <img src="../static/image/categoria_drama.png" width="250px" class="img-fluid" alt="Drama">
+                <h3 class="text-light">Drama</h3>
+                <p>
+                    Para você se divertir e se emocionar!
+                </p>
+                <!--Videos mais curtidos-->
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_dos.png" width="250px"  class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">Descendentes do Sol</h5>
+                          <p class="card-text">
+                            O capitão Yoo Shi Jin das forças <br> especiais se apaixona pela cirurgiã <br>Kang Mo Yeon. 
+                            Os dois lutam para <br> viver um romance em meio a um <br> país devastado pela guerra.
+                          </p>
+                          <a href="/video/3" class="btn btn-primary">Assistir</a>
+                        </div>
+                      </div>
+                    </div>
+                <div class="row mt-4 mb-4">
+                    <div class="video">
+                        <img src="../static/image/capa_mrsunshine.png" width="250px" class="img-thumbnail capa" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Mr. Sunshine</h5>
+                            <p class="card-text">
+                                Miseuteo Syeonsyain é uma série <br> de televisão sul-coreana exibida <br> pela emissora tvN entre 7 de julho a <br>30 de setembro de 2018,
+                                com um <br> total de 24 episódios, a série também <br>estreou internacionalmente pela <br>plataforma Netflix.
+                            </p>
+                            <button type="button" class="btn btn-outline-warning">Disponível em breve</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="video">
+                        <img src="../static/image/capa_pna.png" width="250px" class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Pousando no Amor</h5>
+                            <p class="card-text">O drama é sobre uma herdeira rica <br> chamada Yoon Se Ri, que, enquanto <br>voava de parapente, é forçada a <br>aterrissar na Coreia do Norte por <br>causa dos ventos fortes. 
+                            Um oficial <br>norte-coreano chamado Ri Jung Hyuk <br>a esconde e protege, assim, <br>começando a amá-la.</p>
+                            <button type="button" class="btn btn-outline-warning">Disponível em breve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    
+    </div>
+{% endblock %}
+{% block scripts %}{% endblock %}
